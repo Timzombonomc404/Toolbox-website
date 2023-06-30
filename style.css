@@ -1,0 +1,86 @@
+/* 设置全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+#toolLinksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.category {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff5f5f;
+}
+
+/* 设置特定类别的颜色样式 */
+.category:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.category:nth-child(3n) {
+  background-color: #fcfcfc;
+}
+
+/* 设置响应式布局 */
+@media screen and (max-width: 768px) {
+  .category {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .category {
+    width: 100%;
+  }
+}
+
+/* 将搜索框放在上方灰色区域的下方 */
+#searchContainer {
+  margin-top: 20px;
+}
