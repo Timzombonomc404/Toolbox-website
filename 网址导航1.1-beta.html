@@ -1,0 +1,258 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baida Toolbox</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* 设置全局样式 */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+        }
+        
+        header {
+          background-color: #333;
+          padding: 20px;
+          color: #fff;
+        }
+        
+        h1 {
+          margin: 0;
+        }
+        
+        #toolLinksContainer {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 20px;
+        }
+        
+        .category {
+          width: calc(33.33% - 20px);
+          margin-bottom: 20px;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+        
+        h2 {
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          margin: 0;
+        }
+        
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        li {
+          padding: 10px;
+          border-bottom: 1px solid #f2f2f2;
+        }
+        
+        a {
+          color: #333;
+          text-decoration: none;
+          transition: color 0.3s;
+        }
+        
+        a:hover {
+          color: #ff5f5f;
+        }
+        
+        /* 设置特定类别的颜色样式 */
+        .category:nth-child(2n) {
+          background-color: #f2f2f2;
+        }
+        
+        .category:nth-child(3n) {
+          background-color: #fcfcfc;
+        }
+        
+        /* 设置响应式布局 */
+        @media screen and (max-width: 768px) {
+          .category {
+            width: calc(50% - 20px);
+          }
+        }
+        
+        @media screen and (max-width: 480px) {
+          .category {
+            width: 100%;
+          }
+        }
+        
+        /* 将搜索框放在上方灰色区域的下方 */
+        #searchContainer {
+          margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Baida Toolbox0.1</h1>
+    </header>
+
+    <div id="toolLinksContainer">
+        <div class="category">
+            <h2>Search Engines</h2>
+            <ul>
+                <li><a href="https://www.baidu.com">Baidu</a></li>
+                <li><a href="https://www.bing.com">Bing</a></li>
+                <li><a href="https://www.sogou.com">Sogou</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Music</h2>
+            <ul>
+                <li><a href="https://music.163.com">NetEase Cloud Music</a></li>
+                <li><a href="https://www.kugou.com">Kugou Music</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Email Services</h2>
+            <ul>
+                <li><a href="https://mail.google.com">Gmail</a></li>
+                <li><a href="https://outlook.live.com">Outlook</a></li>
+                <li><a href="https://mail.163.com">NetEase Mail</a></li>
+                <li><a href="https://mail.sina.com.cn">Sina Mail</a></li>
+                <li><a href="https://tutanota.com">Tutanota</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Streaming Platforms</h2>
+            <ul>
+                <li><a href="https://www.hulu.com">Hulu</a></li>
+                <li><a href="https://www.sohu.com">Sohu</a></li>
+                <li><a href="https://www.163.com">NetEase</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+                <li><a href="https://www.discord.com">Discord</a></li>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://weibo.com">Weibo</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Education</h2>
+            <ul>
+                <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org">English Wikipedia</a></li>
+                <li><a href="https://www.britannica.com">Encyclopedia Britannica</a></li>
+                <li><a href="https://www.khanacademy.org">Khan Academy</a></li>
+                <li><a href="https://www.chnmuseum.cn">National Museum of China</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>University Websites</h2>
+            <ul>
+                <li><a href="https://www.harbinstitute.edu.cn">Harbin Institute of Technology</a></li>
+                <li><a href="https://www.tsinghua.edu.cn">Tsinghua University</a></li>
+                <li><a href="https://www.xjtu.edu.cn">Xi'an Jiaotong University</a></li>
+                <li><a href="https://www.hmudc.edu.cn">Harbin Medical University</a></li>
+                <li><a href="https://www.hlju.edu.cn">Heilongjiang University</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Video Streaming</h2>
+            <ul>
+                <li><a href="https://v.qq.com">Tencent Video</a></li>
+                <li><a href="https://www.iqiyi.com">iQIYI</a></li>
+                <li><a href="https://www.ixigua.com">Douyin</a></li>
+                <li><a href="https://v.baidu.com">Baidu Video</a></li>
+                <li><a href="https://www.douyin.com">Douyin</a></li>
+                <li><a href="https://www.bilibili.com">Bilibili</a></li>
+                <li><a href="https://www.youtube.com">YouTube</a></li>
+                <li><a href="https://www.amazon.com/primevideo">Amazon Prime Video</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Security</h2>
+            <ul>
+                <li><a href="https://www.360.com">360 Global Security Center</a></li>
+                <li><a href="https://www.huorong.cn">Huorong Security</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Official Websites</h2>
+            <ul>
+                <li><a href="https://openai.com">OpenAI</a></li>
+                <li><a href="https://www.fmprc.gov.cn">Chinese Foreign Missions</a></li>
+                <li><a href="https://russia.mid.ru">Russian Foreign Missions</a></li>
+                <li><a href="https://www.airchina.com">Air China</a></li>
+                <li><a href="http://www.moe.gov.cn">Chinese Ministry of Education</a></li>
+                <li><a href="https://www.tencent.com">Tencent</a></li>
+                <li><a href="https://www.apple.com">Apple</a></li>
+                <li><a href="https://www.microsoft.com">Microsoft</a></li>
+                <li><a href="https://www.paypal.com">PayPal</a></li>
+                <li><a href="https://www.visa.com">VISA</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Others</h2>
+            <ul>
+                <li><a href="https://www.github.com">GitHub</a></li>
+                <li><a href="https://www.gotalkto.com/">Gotalkto AI</a></li>
+            </ul>
+        </div>
+
+        <!-- 搜索功能 -->
+        <div class="category" id="searchCategory">
+            <h2>Search</h2>
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Enter keywords...">
+                <button type="button" id="searchButton">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+          var searchForm = document.getElementById('searchForm');
+          var searchInput = document.getElementById('searchInput');
+          var searchButton = document.getElementById('searchButton');
+        
+          searchForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // 阻止表单提交的默认行为
+            performSearch();
+          });
+        
+          searchButton.addEventListener('click', function() {
+            performSearch();
+          });
+        
+          function performSearch() {
+            var keywords = searchInput.value.trim();
+            if (keywords !== '') {
+              var searchUrl = 'https://www.bing.com' + encodeURIComponent(keywords);
+              window.open(searchUrl, '_blank');
+            }
+          }
+        }
+    </script>
+
+</body>
+
+</html>
